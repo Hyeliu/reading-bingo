@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: reading-bingo
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    # 免费档没有持久盘，数据写在应用目录里（重启会清空，孩子下次打开会自动补回）
+    # 想要永久保存：加一块 Disk 挂到 /var/data，再把环境变量 DATA_DIR 设成 /var/data

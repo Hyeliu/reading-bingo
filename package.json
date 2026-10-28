@@ -1,0 +1,12 @@
+{
+  "name": "reading-bingo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "阅读大挑战 BINGO —— 班级阅读打卡",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
